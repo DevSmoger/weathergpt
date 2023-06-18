@@ -12,22 +12,22 @@ export function PageData({ data }: { data: any }) {
           rel="noreferrer"
           className="pill"
         >
-          Deploy your own to Vercel
+          Alusta oma ilmateatega
         </a>
         <h1>WeatherGPT</h1>
         <p className="description">
-          ChatGPT Plugin to get the weather of any given location
+          ChatGPT plugin mis tahes asukoha ilmateate saamiseks
         </p>
         <Illustration />
         <div className="meta">
           <div className="info">
-            <span>Your Location</span>
+            <span>Sinu asukoht</span>
             <span className="region">
               <strong>{data.location.name}</strong>
             </span>
           </div>
           <div className="info">
-            <span>Current Temperature</span>
+            <span>Hetke temperatuur</span>
             <strong>
               {data.current.temp_c}°C / {data.current.temp_f}°F
             </strong>
@@ -39,11 +39,11 @@ export function PageData({ data }: { data: any }) {
         <p>
           Generated at {date} by{" "}
           <a
-            href="https://vercel.com/docs/concepts/functions/edge-functions"
+            href="https://coar.ee"
             target="_blank"
             rel="noreferrer"
           >
-            Vercel Edge Runtime
+            Coar
           </a>
         </p>
       </Footer>
